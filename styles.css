@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@100&display=swap');
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+
+body{
+
+
+  background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
+
+  font-family: 'Cyber', sans-serif;
+  line-height: normal;
+  color: grey;
+}
+
+
+
+img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 0%;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 50%);
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  }
+
+
+.container{
+
+  width: 478px;
+  margin: 24px auto;
+}
+
+
+.card{
+  color: black;
+  background-color: darkgrey;
+  opacity: 1;
+
+  box-shadow: 0 0 16px rgb(0 0 0 / 30%);
+
+  text-align: center;
+
+  padding: 50px 100px;
+  border:  solid black;
+
+  margin-bottom: 20px;
+}
+
+
+
+.description{
+  text-align: justify;
+}
+
+.btn{
+
+  background-color: black;
+  color: white;
+  padding: 16px 24px;
+  display: inline-block;
+  border-radius: 4px;
+
+
+}
+
+
+.btn:hover{
+
+  transform: translate(120px, 50%);
+  transition: 0.5s;
+
+}
+
+
+
+.list-inline{
+
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline;
+
+}
+
+
+.list-inline li a {
+  font-size: 40px;
+
+  padding: 0 10px;
+
+
+}
+
+
+.card:hover{
+
+opacity: 1;
+}
+
+
+.container .card:nth-child(2):hover {
+  /* styles for the first card in the container */
+  margin-top: 10px ;
+}
+
+.container .card:nth-child(1){
+  /* styles for the first card in the container */
+
+  z-index:1;
+  position: relative;
+}
+
+
+
+.container .card:nth-child(2){
+  /* styles for the first card in the container */
+  transition: margin-top 0.5s ;
+  z-index:0;
+  margin-top: -5em ;
+  position: relative;
+}
+
+
+.container .card:nth-child(3):hover {
+  /* styles for the first card in the container */
+  margin-top: 10px ;
+}
+
+
+
+
+.container .card:nth-child(3){
+  /* styles for the first card in the container */
+  transition: margin-top 0.5s ;
+  z-index:-1;
+  margin-top: -5em ;
+
+}
+
+
+
+.card:hover {
+  animation: glitch 0.9s linear infinite;
+
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+
+  60%{
+    transform: translateX(8px);
+  }
+  80%{
+    transform: translateX(-8px);
+  }
+}

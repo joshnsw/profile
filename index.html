@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+    <h1>\\ジョシュ_\\</h1>
+    <img class="img-circle" src="./images/joshprofile.png" alt="profile">
+    </div>
+    <div class="card">
+    <h3>_Meme Analyst_</h3>
+    <p class="glitch-text">Meme Analyst with 4+ years of experience. Hobbies include reading, going to the gym, scrolling through memes on Twitter.</p>
+    <a class = "btn" href="https://twitter.com/elonmusk/with_replies">Check my Bio</a>
+    </div>
+    <div class="card">
+    <p>_Follow me on Social Media:_</p>
+    <ul class="list-inline">
+      <li><a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="www.instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    </div>
+  </div>
+
+
+</body>
+
+
+<script>
+
+let colors = [
+  '#ccc375 30%',
+  '#3d444d 70%',
+  '#a8c1e5 30%',
+  '#0d3f67 70%',
+  '#ddc23b 30%',
+  '#222f3e 70%',
+];
+let currentColor = 0;
+
+setInterval(() => {
+  document.body.style.background = `linear-gradient(200deg, ${colors[currentColor]}) #504f21`;
+  currentColor = (currentColor + 1) % colors.length;
+}, 1000); // 1000 milliseconds = 1 second
+
+</script>
+
+
+
+</html>
